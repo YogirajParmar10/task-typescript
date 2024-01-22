@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Sissor</title>
+    <style>
+      body {
+        height: 90vh;
+        background-image: url(rps.png);
+      }
+      .container {
+        text-align: center;
+        font-size: large;
+      }
+      h2 {
+        font-size: 50px;
+        color: aliceblue;
+      }
+      .instruction {
+        color: antiquewhite;
+        text-align: start;
+        margin: 20px 25%;
+      }
+      .game {
+        background-color: rgba(255, 255, 255, 0.869);
+        display: block;
+        /* border: 1px solid gray; */
+        border-radius: 30px;
+        margin: 50px auto;
+        padding: 10px;
+        height: 35%;
+        width: 30%;
+      }
+      .game input {
+        margin-top: 10px;
+        font-size: large;
+      }
+      .game button {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      .result {
+        margin: auto auto;
+        /* border: 1px solid gray; */
+        height: 95px;
+        width: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Let's Play Rock-Paper-Sissor</h2>
+      <div class="instruction">
+        <h3>Instruction:</h3>
+        <p>You have to enter any one of (Rock, Paper or Sissor) the choices</p>
+        <p>The result will be display below.</p>
+      </div>
+      <div class="game">
+        <h3>Let's get started</h3>
+        <label for="userInput">Enter your choise:</label><br />
+        <input type="text" name="userInput" id="userInput" /><br />
+        <button type="submit" id="submit">Submit</button><br />
+        <label for="output" id="result">result:</label>
+        <div class="result"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
