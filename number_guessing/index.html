@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h2>Guess The Number</h2>
+        <hr />
+        <div class="guide">
+          <h4>How to play?</h4>
+          <p>1. You have to Guess any random number between 0 to 100</p>
+          <p>
+            2. If you guess correct number you will win the game, but if you
+            can't you will loose the game
+          </p>
+          <p>3. Remember you have only 5 gueeses to win the game</p>
+        </div>
+      </header>
+      <div class="game">
+        Start gussing the number here.
+        <hr />
+        <div class="input">
+          <label for="randomNumber">Enter any random Number</label>
+          <input type="number" name="randomNumber" id="randomNumber" />
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </div>
+      <div class="text">Result :</div>
+    </div>
+
+    <script src="number.js"></script>
+  </body>
+</html>
